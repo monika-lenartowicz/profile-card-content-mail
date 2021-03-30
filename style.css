@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Kumbh Sans;
+   height: 100vh;
+   background-image: url(/profile-card-component-main/images/bg-pattern-top.svg),
+      url(/profile-card-component-main/images/bg-pattern-bottom.svg);
+   background-repeat: no-repeat;
+   background-position: right 35vw bottom 50vh, left 25vw top 45vh;
+   background-color: hsl(185, 75%, 39%);
+}
