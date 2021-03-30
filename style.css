@@ -3,13 +3,60 @@
 *::before {
    box-sizing: border-box;
 }
-
 body {
    font-family: Kumbh Sans;
    height: 100vh;
-   background-image: url(/profile-card-component-main/images/bg-pattern-top.svg),
-      url(/profile-card-component-main/images/bg-pattern-bottom.svg);
-   background-repeat: no-repeat;
-   background-position: right 35vw bottom 50vh, left 25vw top 45vh;
-   background-color: hsl(185, 75%, 39%);
+   font-size: 18px;
+}
+
+@media screen and (max-width: 375px) {
+   body {
+      background-image: url(/profile-card-component-main/images/bg-pattern-top.svg),
+         url(/profile-card-component-main/images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: right 35vw bottom 50vh, left 25vw top 45vh;
+      background-color: hsl(185, 75%, 39%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .card {
+      background-color: white;
+      margin: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90vw;
+   }
+   .image {
+      border-radius: 50%;
+      border: 7px solid white;
+      margin-top: 50px;
+      width: 96px;
+   }
+   .attribution {
+      display: block;
+      font-size: 8px;
+   }
+   .city {
+      margin: 0;
+      font-size: 14px;
+      color:hsl(0, 0%, 59%)
+   }
+   .name {
+      margin-bottom: 10px;
+      font-size: 18px;
+     
+   }
+   .name__age{
+      color: hsl(0, 0%, 59%);
+      font-weight: normal;
+   }
+   .statistics {
+      display: flex;
+      
+   }
 }
