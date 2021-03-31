@@ -21,6 +21,20 @@ body {
       align-items: center;
       flex-direction: column;
    }
+   .attribution {
+      display: block;
+      font-size: 8px;
+   }
+
+   .image {
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-top: -50px;
+      margin-bottom: 15px;
+      width: 96px;
+      z-index: 0;
+   }
+
    .card {
       background-color: white;
       border-radius: 20px;
@@ -31,18 +45,10 @@ body {
       margin: 20px;
       width: 90vw;
    }
-   .image {
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-top: -50px;
-      margin-bottom: 15px;
-      width: 96px;
-      z-index: 0;
-   }
+
    .card::before {
       content: "";
       background: url(./images/bg-pattern-card.svg);
-      bottom: content-box;
       border-radius: 20px 20px 0 0;
       height: 130px;
       margin-top: 0;
@@ -50,16 +56,15 @@ body {
       z-index: 0;
    }
 
-   .attribution {
-      display: block;
-      font-size: 8px;
-   }
-
    .city {
-      margin-top: 0;
-      margin-bottom: 30px;
-      font-size: 14px;
+      border-bottom: 1px solid rgb(233, 230, 230);
       color: hsl(0, 0%, 59%);
+      font-size: 14px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+      text-align: center;
+      width: 90vw;
    }
 
    .name {
@@ -74,8 +79,6 @@ body {
 
    .statistics {
       display: flex;
-      border-top: 1px solid hsl(0, 6%, 90%);
-      margin: auto;
       padding-bottom: 15px;
       text-align: center;
    }
@@ -84,17 +87,17 @@ body {
       margin-right: 20px;
       padding: 10px;
    }
-
-   .statistics__number {
-      font-weight: 700;
-      margin-bottom: 10px;
-   }
-
+   
    .statistics__description {
       color: hsl(0, 0%, 59%);
       font-size: 10px;
       letter-spacing: 1.5px;
       margin-top: 0;
       margin-bottom: 0;
-     }
+   }
+
+   .statistics__number {
+      font-weight: 700;
+      margin-bottom: 10px;
+   }
 }
